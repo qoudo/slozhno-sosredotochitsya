@@ -5,17 +5,23 @@
 */
 
 .page.theme_dark {
-    --accent-color: #000028;
-    --image: url("../images/cover-image-dark.png");
-    .header__title {
-        color: #DB00FF;
-        text-shadow: 4px 4px 0 #FF0070;
-    }
+    --decoration-color: #FF0070;
+    --background-color: #000028;
+    --accent-background-color: #FF0070;
+    --cover: url("../images/cover-image-dark.png");
+    --title-color: #DB00FF;
+    --shadow-color: #FF0070;
+    --header-description-color: #000028;
+    --navigation-color: #FF0070;
 }
 
 @media (prefers-color-scheme: dark) {
-    .header__title {
-        color: #DB00FF;
-        text-shadow: 4px 4px 0 #FF0070;
-    }
+    --decoration-color: #FF0070;
+    --background-color: #000028;
+    --accent-background-color: #FF0070;
+    --cover: url("../images/cover-image-dark.png");
+    --title-color: #DB00FF;
+    --shadow-color: #FF0070;
+    --header-description-color: #000028;
+    --navigation-color: #FF0070;
 }

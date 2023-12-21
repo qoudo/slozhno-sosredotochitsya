@@ -5,7 +5,12 @@
 
 
 :root  {
-    --accent-color: #000028;
-    --image: url("../images/cover-image-dark.png");
-    --additional-color: #FF0070;
+    --decoration-color: #FF0070;
+    --background-color: #000028;
+    --accent-background-color: #FF0070;
+    --cover: url("../images/cover-image-dark.png");
+    --title-color: #DB00FF;
+    --shadow-color: #FF0070;
+    --header-description-color: #000028;
+    --navigation-color: #FF0070;
 }

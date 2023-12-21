@@ -5,13 +5,23 @@
 */
 
 .page.theme_light {
-    --accent-color: #FFF1F7;
-    --image: url("../images/cover-image-light.png");
+    --decoration-color: #353430;
+    --background-color: #FFF1F7;
+    --accent-background-color: #FF8DCB;
+    --cover: url("../images/cover-image-light.png");
+    --title-color: #FFC2E6;
+    --shadow-color: #FF0070;
+    --header-description-color: #353430;
+    --navigation-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
-    .page {
-        --accent-color: #FFF1F7;
-        --image: url("../images/cover-image-light.png");
-    }
+    --decoration-color: #353430;
+    --background-color: #FFF1F7;
+    --accent-background-color: #FF8DCB;
+    --cover: url("../images/cover-image-light.png");
+    --title-color: #FFC2E6;
+    --shadow-color: #FF0070;
+    --header-description-color: #353430;
+    --navigation-color: #353430;
 }
