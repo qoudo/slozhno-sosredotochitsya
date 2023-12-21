@@ -8,7 +8,7 @@
     background-attachment: fixed;
     font-family: 'IBM Plex Mono', 'sans-serif';
     font-size: 18px;
-    margin: 10px;
+    padding: 10px;
 }
 
 /* Вспомогательные стили */
@@ -97,7 +97,7 @@
 
 @media (width >= 768px) {
     .page {
-        margin: 20px;
+        padding: 20px;
     }
 
     /* Шапка */
