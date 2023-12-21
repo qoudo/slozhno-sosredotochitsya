@@ -62,7 +62,7 @@
 .header__theme-menu-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .header__theme-menu-button_active {
@@ -147,7 +147,7 @@
     }
     .header__theme-menu {
         margin-block-start: 170px;
-        margin-block-end: 173px;
+        margin-block-end: 70px;
     }
     .header__description {
         justify-self: end;
