@@ -23,6 +23,7 @@
 .header {
     position: relative;
     display: grid;
+    min-block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -56,6 +57,12 @@
     text-transform: lowercase;
     background: transparent;
     cursor: pointer;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .header__theme-menu-button_active {
