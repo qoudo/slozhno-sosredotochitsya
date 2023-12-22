@@ -2,14 +2,13 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    background: no-repeat var(--cover);
+    background: no-repeat var(--cover) center;
     background-color: var(--background-color);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'IBM Plex Mono', 'monospace';
     font-size: 18px;
     font-weight: 400;
-    padding: 10px;
 }
 
 /* Вспомогательные стили */
@@ -21,14 +20,19 @@
 /* Шапка */
 
 .header {
+    display: grid;
+    min-block-size: 100vh;
+}
+
+.header__layout {
     position: relative;
     display: grid;
-    min-block-size: calc(100vh - 20px);
+    margin: 10px;
 }
 
 .header__theme-menu {
     justify-self: end;
-    margin-block: 60px;
+    margin-block: 65px;
 }
 
 .header__title {
@@ -44,6 +48,7 @@
     font-weight: 700;
     color: var(--header-description-color);
     margin-block: 55px;
+    height: fit-content;
 }
 
 
@@ -112,8 +117,8 @@
 
 /* Границы шапки */
 
-.header::before,
-.header::after {
+.header__layout::before,
+.header__layout::after {
     content: "";
     position: absolute;
     inline-size: 25px;
@@ -121,13 +126,13 @@
 }
 
 
-.header::before {
+.header__layout::before {
     border-inline-end: 1px solid var(--decoration-color);
     border-block-start: 1px solid var(--decoration-color);
     inset-inline-end: 0;
 }
 
-.header::after {
+.header__layout::after {
     border-inline-start: 1px solid var(--decoration-color);
     border-block-end: 1px solid var(--decoration-color);
     inset-block-end: 0;
@@ -137,15 +142,12 @@
 /* Media запросы */
 
 @media (width >= 768px) {
-    .page {
-        padding: 20px;
+
+    .header__layout {
+        margin: 20px;
     }
 
     /* Шапка */
-
-    .header {
-        min-block-size: calc(100vh - 40px);
-    }
 
     .header__title {
         margin-left: -20px;
@@ -182,9 +184,5 @@
 
     .header__theme-menu-list {
         flex-direction: row;
-    }
-
-    .header__description {
-        margin-block: 114px 134px
     }
 }
