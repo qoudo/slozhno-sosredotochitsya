@@ -5,12 +5,16 @@
 
 
 :root {
-    --decoration-color: #FF0070;
-    --background-color: #000028;
-    --accent-background-color: #FF0070;
+    /* Дублирующие и общие цвета */
+    --pink: #FF0070;
+    --gray: #353430;
+    --deep-blue: #000028;
+
+    /* Цвета темной темы */
+    --decoration-color: var(--pink);
+    --background-color: var(--deep-blue);
+    --accent-background-color: var(--pink);
     --cover: url("../images/cover-image-dark.png");
     --title-color: #DB00FF;
-    --shadow-color: #FF0070;
-    --header-description-color: #000028;
-    --navigation-color: #FF0070;
+    --header-description-color: var(--deep-blue);
 }

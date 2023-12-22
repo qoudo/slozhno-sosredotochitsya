@@ -5,23 +5,19 @@
 */
 
 .page.theme_light {
-    --decoration-color: #353430;
+    --decoration-color: var(--gray);
     --background-color: #FFF1F7;
     --accent-background-color: #FF8DCB;
     --cover: url("../images/cover-image-light.png");
     --title-color: #FFC2E6;
-    --shadow-color: #FF0070;
-    --header-description-color: #353430;
-    --navigation-color: #353430;
+    --header-description-color: var(--gray);
 }
 
 @media (prefers-color-scheme: light) {
-    --decoration-color: #353430;
+    --decoration-color: var(--gray);
     --background-color: #FFF1F7;
     --accent-background-color: #FF8DCB;
     --cover: url("../images/cover-image-light.png");
     --title-color: #FFC2E6;
-    --shadow-color: #FF0070;
-    --header-description-color: #353430;
-    --navigation-color: #353430;
+    --header-description-color: var(--gray);
 }

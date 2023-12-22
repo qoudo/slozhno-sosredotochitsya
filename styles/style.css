@@ -36,19 +36,19 @@
 }
 
 .header__title {
-    margin-left: -10px;
+    margin-inline-start: -10px;
     font-weight: 700;
     line-height: 82.5%;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     color: var(--title-color);
-    text-shadow: 4px 4px 0 var(--shadow-color);
+    text-shadow: 4px 4px 0 var(--pink);
 }
 
 .header__description {
     font-weight: 700;
     color: var(--header-description-color);
     margin-block: 55px;
-    height: fit-content;
+    block-size: fit-content;
 }
 
 
@@ -57,7 +57,7 @@
 .header__theme-menu-button {
     border: 1px solid transparent;
     padding: 2px 12px;
-    color: var(--navigation-color);
+    color: var(--decoration-color);
     line-height: 18px;
     text-transform: lowercase;
     background: transparent;
@@ -71,13 +71,13 @@
 }
 
 .header__theme-menu-button_active {
-    border-color: rgba(var(--navigation-color), .40);
+    border-color: rgba(var(--decoration-color), .40);
     cursor: default;
     pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-    border-color: var(--navigation-color);
+    border-color: var(--decoration-color);
 }
 
 .header__theme-menu-button:focus {
@@ -85,7 +85,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-    border-block-end-color: var(--navigation-color);
+    border-block-end-color: var(--decoration-color);
 }
 
 /* Декоративная надпись REC */
@@ -150,7 +150,7 @@
     /* Шапка */
 
     .header__title {
-        margin-left: -20px;
+        margin-inline-start: -20px;
     }
     .header__theme-menu {
         margin-block-start: 170px;

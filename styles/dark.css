@@ -5,23 +5,19 @@
 */
 
 .page.theme_dark {
-    --decoration-color: #FF0070;
-    --background-color: #000028;
-    --accent-background-color: #FF0070;
+    --decoration-color: var(--pink);
+    --background-color: var(--deep-blue);
+    --accent-background-color: var(--pink);
     --cover: url("../images/cover-image-dark.png");
     --title-color: #DB00FF;
-    --shadow-color: #FF0070;
-    --header-description-color: #000028;
-    --navigation-color: #FF0070;
+    --header-description-color: var(--deep-blue);
 }
 
 @media (prefers-color-scheme: dark) {
-    --decoration-color: #FF0070;
-    --background-color: #000028;
-    --accent-background-color: #FF0070;
+    --decoration-color: var(--pink);
+    --background-color: var(--deep-blue);
+    --accent-background-color: var(--pink);
     --cover: url("../images/cover-image-dark.png");
     --title-color: #DB00FF;
-    --shadow-color: #FF0070;
-    --header-description-color: #000028;
-    --navigation-color: #FF0070;
+    --header-description-color: var(--deep-blue);
 }
