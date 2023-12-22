@@ -11,6 +11,7 @@
     --cover: url("../images/cover-image-light.png");
     --title-color: #FFC2E6;
     --header-description-color: var(--gray);
+    --text-color: var(--gray);
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,4 +21,5 @@
     --cover: url("../images/cover-image-light.png");
     --title-color: #FFC2E6;
     --header-description-color: var(--gray);
+    --text-color: var(--gray);
 }

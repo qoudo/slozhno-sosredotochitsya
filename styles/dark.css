@@ -11,6 +11,7 @@
     --cover: url("../images/cover-image-dark.png");
     --title-color: #DB00FF;
     --header-description-color: var(--deep-blue);
+    --text-color: #F1B2CE;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,4 +21,5 @@
     --cover: url("../images/cover-image-dark.png");
     --title-color: #DB00FF;
     --header-description-color: var(--deep-blue);
+    --text-color: #F1B2CE;
 }
