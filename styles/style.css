@@ -22,6 +22,14 @@
     margin-inline: 10px;
 }
 
+.vertical {
+    grid-column: 2/4;
+}
+
+.horizontal {
+    grid-column: 1/4;
+}
+
 /* Шапка */
 
 .header {
@@ -157,9 +165,19 @@
     margin-block-start: 40px;
 }
 
+.main__gallery,
+.main__section-gallery,
 .main__section {
    display: grid;
-   gap: 20px;
+}
+
+.main__section-content {
+    gap: 20px;
+}
+
+.main__gallery,
+.main__section-gallery {
+    gap: 10px;
 }
 
 .main__content {
@@ -189,8 +207,17 @@
 }
 
 .main__note {
-    font-weight: 700;
     color: var(--header-description-color);
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.main__gallery-item-image {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
 }
 
 /* Media запросы */
@@ -207,13 +234,16 @@
     .header__wrapper {
         margin-block: 20px;
     }
+
     .header__title {
         margin-inline-start: -20px;
     }
+
     .header__theme-menu {
         margin-block-start: 170px;
         margin-block-end: 70px;
     }
+
     .header__description {
         justify-self: end;
         inline-size: 50%;
@@ -225,16 +255,24 @@
         margin-block-start: 60px;
     }
 
-    .main__section {
+    .main__gallery,
+    .main__section-content {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .vertical {
-        grid-column: 2/4;
+    .main__gallery,
+    .main__section-gallery {
+        gap: 20px;
     }
 
-    .horizontal {
-        grid-column: 1/4;
+    .main__gallery-item:first-child,
+    .main__gallery-item:last-child {
+        grid-column-start: span 2;
+    }
+
+    .main__gallery-item:nth-child(2),
+    .main__gallery-item:nth-child(3) {
+        grid-row-start: span 2;
     }
 }
 
