@@ -246,9 +246,6 @@
     .layout {
         margin-inline: 20px;
     }
-    .vertical {
-        grid-column: 2/4;
-    }
     .horizontal {
         grid-column: 1/4;
     }
@@ -283,7 +280,7 @@
     }
 
     .main__section-content {
-        grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .main__gallery {
