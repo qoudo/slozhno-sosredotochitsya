@@ -22,10 +22,6 @@
     margin-inline: 10px;
 }
 
-.horizontal {
-    grid-column: 1/4;
-}
-
 .wrapper {
     position: relative;
     display: grid;
@@ -256,6 +252,9 @@
     .vertical {
         grid-column: 2/4;
     }
+    .horizontal {
+        grid-column: 1/4;
+    }
 
     .wrapper {
         margin-block: 20px;
@@ -326,7 +325,6 @@
     }
 
     .horizontal {
-        grid-column: 1/4;
         grid-row: 2/3;
         grid-auto-flow: column;
         gap: 20px;
