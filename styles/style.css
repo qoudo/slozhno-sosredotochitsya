@@ -12,7 +12,7 @@
     line-height: 130%;
 }
 
-/* Вспомогательные стили */
+/* Вспомогательные/общие стили */
 
 .decor-background {
     background: var(--accent-background-color);
@@ -30,31 +30,41 @@
     grid-column: 1/4;
 }
 
-/* Шапка */
-
-.header {
-    display: grid;
-    min-block-size: 100vh;
-}
-
-.header__wrapper {
+.wrapper {
     position: relative;
     display: grid;
     margin-block: 10px;
 }
 
-.header__theme-menu {
-    justify-self: end;
-    margin-block: 65px;
+.pos-center {
+    align-content: center;
+    text-align: center;
 }
 
-.header__title {
+.negative-margin {
     margin-inline-start: -10px;
+}
+
+/* Шапка */
+
+.footer,
+.header {
+    display: grid;
+    min-block-size: 100vh;
+}
+
+.footer__title,
+.header__title {
     font-weight: 700;
     line-height: 82.5%;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     color: var(--title-color);
     text-shadow: 4px 4px 0 var(--pink);
+}
+
+.header__theme-menu {
+    justify-self: end;
+    margin-block: 65px;
 }
 
 .header__description {
@@ -130,8 +140,8 @@
 
 /* Границы шапки */
 
-.header__wrapper::before,
-.header__wrapper::after {
+.wrapper::before,
+.wrapper::after {
     content: "";
     position: absolute;
     inline-size: 25px;
@@ -139,13 +149,13 @@
 }
 
 
-.header__wrapper::before {
+.wrapper::before {
     border-inline-end: 1px solid var(--decoration-color);
     border-block-start: 1px solid var(--decoration-color);
     inset-inline-end: 0;
 }
 
-.header__wrapper::after {
+.wrapper::after {
     border-inline-start: 1px solid var(--decoration-color);
     border-block-end: 1px solid var(--decoration-color);
     inset-block-end: 0;
@@ -161,6 +171,7 @@
 
 /* Блок main */
 
+.footer,
 .main {
     margin-block-start: 40px;
 }
@@ -220,6 +231,24 @@
     inline-size: 100%;
 }
 
+.main__link {
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: 2px 2px 0 var(--accent-background-color);
+}
+
+.main__link:hover {
+    text-decoration: underline;
+}
+
+.main__link:focus {
+    outline: 0;
+}
+
+.main__link:focus-visible {
+    outline: 1px solid var(--text-color);
+}
+
 /* Media запросы */
 
 @media (width >= 768px) {
@@ -231,11 +260,11 @@
 
     /* Шапка */
 
-    .header__wrapper {
+    .wrapper {
         margin-block: 20px;
     }
 
-    .header__title {
+    .negative-margin {
         margin-inline-start: -20px;
     }
 
@@ -250,7 +279,7 @@
     }
 
     /* Блок main */
-
+    .footer,
     .main {
         margin-block-start: 60px;
     }
@@ -278,6 +307,7 @@
 
 @media (width >= 1024px) {
     /* Шапка */
+    .footer__title,
     .header__title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
