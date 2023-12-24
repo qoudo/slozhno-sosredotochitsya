@@ -1,9 +1,3 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
     --main-color: var(--gray);
     --additional-color: #FFF1F7;
@@ -15,11 +9,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-    --main-color: var(--gray);
-    --additional-color: #FFF1F7;
-    --decoration-color: #FF8DCB;
-    --cover: url("../images/cover-image-light.png");
-    --title-color: #FFC2E6;
-    --text-main-color: var(--gray);
-    --text-additional-color: var(--gray);
+    :root {
+        --main-color: var(--gray);
+        --additional-color: #FFF1F7;
+        --decoration-color: #FF8DCB;
+        --cover: url("../images/cover-image-light.png");
+        --title-color: #FFC2E6;
+        --text-main-color: var(--gray);
+        --text-additional-color: var(--gray);
+    }
 }

@@ -1,9 +1,3 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
     --main-color: var(--pink);
     --additional-color: var(--deep-blue);
@@ -15,11 +9,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    --main-color: var(--pink);
-    --additional-color: var(--deep-blue);
-    --decoration-color: var(--pink);
-    --cover: url("../images/cover-image-dark.png");
-    --title-color: #DB00FF;
-    --text-main-color: var(--deep-blue);
-    --text-additional-color: #F1B2CE;
+    :root {
+        --main-color: var(--pink);
+        --additional-color: var(--deep-blue);
+        --decoration-color: var(--pink);
+        --cover: url("../images/cover-image-dark.png");
+        --title-color: #DB00FF;
+        --text-main-color: var(--deep-blue);
+        --text-additional-color: #F1B2CE;
+    }
 }

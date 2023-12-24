@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     background: no-repeat var(--cover) center;
     background-color: var(--additional-color);
     background-size: cover;
@@ -285,11 +282,8 @@
         margin-block-start: 80px;
     }
 
+    .main__gallery,
     .main__section-content {
-        grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
-    }
-
-    .main__gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 
