@@ -11,11 +11,11 @@
     --deep-blue: #000028;
 
     /* Цвета темной темы */
+    --main-color: var(--pink);
+    --additional-color: var(--deep-blue);
     --decoration-color: var(--pink);
-    --background-color: var(--deep-blue);
-    --accent-background-color: var(--pink);
     --cover: url("../images/cover-image-dark.png");
     --title-color: #DB00FF;
-    --header-description-color: var(--deep-blue);
-    --text-color: #F1B2CE;
+    --text-main-color: var(--deep-blue);
+    --text-additional-color: #F1B2CE;
 }

@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     background: no-repeat var(--cover) center;
-    background-color: var(--background-color);
+    background-color: var(--additional-color);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'IBM Plex Mono', 'monospace';
@@ -15,7 +15,7 @@
 /* Вспомогательные/общие стили */
 
 .decor-background {
-    background: var(--accent-background-color);
+    background: var(--decoration-color);
 }
 
 .layout {
@@ -61,7 +61,7 @@
 
 .header__description {
     font-weight: 700;
-    color: var(--header-description-color);
+    color: var(--text-main-color);
     margin-block: 55px;
     block-size: fit-content;
 }
@@ -72,7 +72,7 @@
 .header__theme-menu-button {
     border: 1px solid transparent;
     padding: 2px 12px;
-    color: var(--decoration-color);
+    color: var(--main-color);
     line-height: 18px;
     text-transform: lowercase;
     background: transparent;
@@ -86,13 +86,13 @@
 }
 
 .header__theme-menu-button_active {
-    border-color: rgba(var(--decoration-color), .40);
+    border-color: rgba(var(--main-color), .40);
     cursor: default;
     pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-    border-color: var(--decoration-color);
+    border-color: var(--main-color);
 }
 
 .header__theme-menu-button:focus {
@@ -100,7 +100,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-    border-block-end-color: var(--decoration-color);
+    border-block-end-color: var(--main-color);
 }
 
 /* Декоративная надпись REC */
@@ -117,15 +117,15 @@
 
 .header__decoration::before {
     content: "REC";
-    color: var(--decoration-color);
+    color: var(--main-color);
     line-height: 24px;
 }
 
 .header__decoration::after {
     content: "";
     border-radius: 50%;
-    box-shadow: 0 0 2px 2px var(--decoration-color) ;
-    background: var(--decoration-color);
+    box-shadow: 0 0 2px 2px var(--main-color) ;
+    background: var(--main-color);
     inline-size: 9px;
     block-size: 9px;
 }
@@ -142,14 +142,14 @@
 
 
 .wrapper::before {
-    border-inline-end: 1px solid var(--decoration-color);
-    border-block-start: 1px solid var(--decoration-color);
+    border-inline-end: 1px solid var(--main-color);
+    border-block-start: 1px solid var(--main-color);
     inset-inline-end: 0;
 }
 
 .wrapper::after {
-    border-inline-start: 1px solid var(--decoration-color);
-    border-block-end: 1px solid var(--decoration-color);
+    border-inline-start: 1px solid var(--main-color);
+    border-block-end: 1px solid var(--main-color);
     inset-block-end: 0;
 }
 
@@ -193,24 +193,24 @@
 }
 
 .main__title {
-   color: var(--decoration-color);
+   color: var(--main-color);
    font-weight: 700;
    font-size: inherit;
 }
 
 .main__subtitle {
-    color: var(--header-description-color);
+    color: var(--text-main-color);
     font-weight: 700;
     font-size: inherit;
 }
 
 .main__description {
-    color: var(--text-color);
+    color: var(--text-additional-color);
     margin-block-start: 10px;
 }
 
 .main__note {
-    color: var(--header-description-color);
+    color: var(--text-main-color);
     font-weight: inherit;
     font-size: inherit;
 }
@@ -224,9 +224,9 @@
 }
 
 .main__link {
-    color: var(--text-color);
+    color: var(--text-additional-color);
     text-decoration: none;
-    text-shadow: 2px 2px 0 var(--accent-background-color);
+    text-shadow: 2px 2px 0 var(--decoration-color);
 }
 
 .main__link:hover {
@@ -238,7 +238,7 @@
 }
 
 .main__link:focus-visible {
-    outline: 1px solid var(--text-color);
+    outline: 1px solid var(--text-additional-color);
 }
 
 /* Media запросы */
@@ -285,11 +285,8 @@
         margin-block-start: 80px;
     }
 
+    .main__gallery,
     .main__section-content {
-        grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
-    }
-
-    .main__gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 
