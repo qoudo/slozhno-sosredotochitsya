@@ -326,7 +326,7 @@
 
     .horizontal {
         grid-row: 2/3;
-        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }
