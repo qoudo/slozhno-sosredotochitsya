@@ -22,10 +22,6 @@
     margin-inline: 10px;
 }
 
-.vertical {
-    grid-column: 2/4;
-}
-
 .horizontal {
     grid-column: 1/4;
 }
@@ -257,8 +253,9 @@
     .layout {
         margin-inline: 20px;
     }
-
-    /* Шапка */
+    .vertical {
+        grid-column: 2/4;
+    }
 
     .wrapper {
         margin-block: 20px;
@@ -268,6 +265,7 @@
         margin-inline-start: -20px;
     }
 
+    /* Шапка */
     .header__theme-menu {
         margin-block-start: 170px;
         margin-block-end: 70px;
