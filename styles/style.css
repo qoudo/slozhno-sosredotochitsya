@@ -285,8 +285,11 @@
         margin-block-start: 80px;
     }
 
-    .main__gallery,
     .main__section-content {
+        grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
+    }
+
+    .main__gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 
