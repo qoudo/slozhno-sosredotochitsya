@@ -162,6 +162,15 @@
    gap: 20px;
 }
 
+.main__content {
+    display: grid;
+    gap: 20px 0;
+}
+
+.main__section:not(:first-child) {
+    margin-block-start: 80px;
+}
+
 .main__title {
    color: var(--decoration-color);
    font-weight: 700;
@@ -177,6 +186,11 @@
 .main__description {
     color: var(--text-color);
     margin-block-start: 10px;
+}
+
+.main__note {
+    font-weight: 700;
+    color: var(--header-description-color);
 }
 
 /* Media запросы */
@@ -215,8 +229,12 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main__article {
+    .vertical {
         grid-column: 2/4;
+    }
+
+    .horizontal {
+        grid-column: 1/4;
     }
 }
 
@@ -235,5 +253,12 @@
 
     .header__theme-menu-list {
         flex-direction: row;
+    }
+
+    .horizontal {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        grid-auto-flow: column;
+        gap: 20px;
     }
 }
