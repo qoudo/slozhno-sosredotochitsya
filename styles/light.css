@@ -6,6 +6,9 @@
     --title-color: #FFC2E6;
     --text-main-color: var(--gray);
     --text-additional-color: var(--gray);
+    --transparent-main-color: rgba(50, 49, 45, .4);
+    --display-rec: none;
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,5 +20,7 @@
         --title-color: #FFC2E6;
         --text-main-color: var(--gray);
         --text-additional-color: var(--gray);
+        --transparent-main-color: rgba(50, 49, 45, .4);
+        --display-rec: none;
     }
 }

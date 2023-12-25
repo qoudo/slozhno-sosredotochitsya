@@ -6,6 +6,8 @@
     --title-color: #DB00FF;
     --text-main-color: var(--deep-blue);
     --text-additional-color: #F1B2CE;
+    --transparent-main-color: rgba(255, 0, 112, .4);
+    --display-rec: flex;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +19,7 @@
         --title-color: #DB00FF;
         --text-main-color: var(--deep-blue);
         --text-additional-color: #F1B2CE;
+        --transparent-main-color: rgba(255, 0, 112, .4);
+        --display-rec: flex;
     }
 }
